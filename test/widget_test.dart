@@ -22,7 +22,7 @@ void main() {
     // Tap the '+' icon and trigger a frame.
     await tester.tap(find.byIcon(Icons.add));
     await tester.pump();
-// blablabla
+// blablablabla
     // Vérifiez que notre compteur s'est incrémenté.
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
