@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-        backgroundColor:Colors.blueAccent,
+        backgroundColor:Colors.blue,
         body: Column(
         children: <Widget>[
         Expanded(
