@@ -8,14 +8,13 @@ class GeneratePage extends StatefulWidget {
 }
 
 class _GeneratePageState extends State<GeneratePage> {
-
   String qrData = 'https://github.com/neon97';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:Text("Generate"),
+        title: Text("Generate"),
         centerTitle: true,
       ),
       body: Container(
@@ -24,8 +23,7 @@ class _GeneratePageState extends State<GeneratePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-         QrImage(data: qrData),
-
+            QrImage(data: qrData),
             SizedBox(height: 10.0),
             Text("Get Your Data to the QR CODE"),
             TextField(
@@ -34,27 +32,27 @@ class _GeneratePageState extends State<GeneratePage> {
                 hintText: "Enter the Index Number",
               ),
             ),
-        SizedBox(height: 20.0),
-        FlatButton(
-          padding: EdgeInsets.all(15.0),
-          child: Text("GENERATE QR CODE"),
-          onPressed: (){
-          if(qrText.text.isEmpty){
-           setState(() {
-             qrData = "https://flutter.dev";
-           });
-          }else{
-           qrData = qrText.text;
-          }
-          },
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20.0),
-              side: BorderSide(color: Colors.blueAccent, width: 3.0),
+            SizedBox(height: 20.0),
+            FlatButton(
+              padding: EdgeInsets.all(15.0),
+              child: Text("GENERATE QR CODE"),
+              onPressed: () {
+                if (qrText.text.isEmpty) {
+                  setState(() {
+                    qrData = "https://flutter.dev";
+                  });
+                } else {
+                  qrData = qrText.text;
+                }
+              },
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0),
+                side: BorderSide(color: Colors.green, width: 3.0),
+              ),
             ),
-          ),
-        ],
+          ],
         ),
-        ),
+      ),
     );
   }
 
