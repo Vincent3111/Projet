@@ -23,8 +23,8 @@ class _HomePageState extends State<HomePage> {
               height: 40.0,
               child: Material(
                 borderRadius: BorderRadius.circular(20.0),
-                shadowColor: Colors.blueAccent,
-                color: Colors.blueAccent,
+                shadowColor: Colors.green,
+                color: Colors.green,
                 elevation: 7.0,
                 child: GestureDetector(
                   onTap: () {
@@ -48,8 +48,8 @@ class _HomePageState extends State<HomePage> {
               height: 40.0,
               child: Material(
                 borderRadius: BorderRadius.circular(20.0),
-                shadowColor: Colors.blueAccent,
-                color: Colors.blueAccent,
+                shadowColor: Colors.green,
+                color: Colors.green,
                 elevation: 7.0,
                 child: GestureDetector(
                   onTap: () {

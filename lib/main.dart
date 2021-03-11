@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.green,
       body: Column(
         children: <Widget>[
           Expanded(
@@ -57,7 +57,7 @@ class MyHomePage extends StatelessWidget {
                       child: Text(
                         'Easy QR',
                         style: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.green,
                             fontWeight: FontWeight.bold,
                             fontSize: 32.0),
                       ),
@@ -70,14 +70,14 @@ class MyHomePage extends StatelessWidget {
                     ),
                     Container(
                       child: Text("Computing & Information Systems",
-                          style: TextStyle(
-                              fontSize: 20.0, color: Colors.blueAccent)),
+                          style:
+                              TextStyle(fontSize: 20.0, color: Colors.green)),
                     ),
                     SizedBox(height: 15.0),
                     Container(
                       child: Text("SUSL",
-                          style: TextStyle(
-                              fontSize: 20.0, color: Colors.blueAccent)),
+                          style:
+                              TextStyle(fontSize: 20.0, color: Colors.green)),
                     ),
                     SizedBox(height: 60.0),
                     Row(
@@ -92,7 +92,7 @@ class MyHomePage extends StatelessWidget {
                                   builder: (context) => DetailScreen()),
                             );
                           },
-                          backgroundColor: Colors.blueAccent,
+                          backgroundColor: Colors.green,
                           child: Icon(Icons.arrow_right),
                         ),
                       ],

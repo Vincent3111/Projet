@@ -14,6 +14,7 @@ class _GeneratePageState extends State<GeneratePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.green,
         title: Text("Generate"),
         centerTitle: true,
       ),
