@@ -15,7 +15,7 @@ class _GeneratePageState extends State<GeneratePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text("Generate"),
+        title: Text("Génère"),
         centerTitle: true,
       ),
       body: Container(
@@ -26,17 +26,16 @@ class _GeneratePageState extends State<GeneratePage> {
           children: <Widget>[
             QrImage(data: qrData),
             SizedBox(height: 10.0),
-            Text("Get Your Data to the QR CODE"),
             TextField(
               controller: qrText,
               decoration: InputDecoration(
-                hintText: "Enter the Index Number",
+                hintText: "Entrer le numero ID ",
               ),
             ),
             SizedBox(height: 20.0),
             FlatButton(
               padding: EdgeInsets.all(15.0),
-              child: Text("GENERATE QR CODE"),
+              child: Text("Génère QR CODE"),
               onPressed: () {
                 if (qrText.text.isEmpty) {
                   setState(() {

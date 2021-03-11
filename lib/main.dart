@@ -2,6 +2,7 @@ import 'package:easyqrapp/generate.dart';
 import 'package:easyqrapp/homepage.dart';
 import 'package:easyqrapp/lecturer.dart';
 import 'package:easyqrapp/scan.dart';
+import 'package:easyqrapp/user.dart';
 import 'package:flutter/material.dart';
 import 'register.dart';
 
@@ -128,9 +129,9 @@ class DetailScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold),
           ),
           SizedBox(height: 20.0),
-          /* RaisedButton(
+          RaisedButton(
             child: Text(
-              "ADMINISTRATEUR",
+              "UTILISATEUR",
               style: TextStyle(
                 color: Colors.black,
                 letterSpacing: 1.5,
@@ -146,9 +147,9 @@ class DetailScreen extends StatelessWidget {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
                 side: BorderSide(color: Colors.green, width: 3.0)),
-          ),*/
+          ),
           SizedBox(height: 10.0),
-          RaisedButton(
+          /* RaisedButton(
             child: Text(
               "UTILISATEUR",
               style: TextStyle(
@@ -167,7 +168,7 @@ class DetailScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20.0),
                 side: BorderSide(color: Colors.green, width: 3.0)),
           ),
-          SizedBox(height: 10.0),
+          SizedBox(height: 10.0),*/
         ],
       ),
     );
