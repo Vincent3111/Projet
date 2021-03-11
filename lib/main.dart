@@ -3,7 +3,6 @@ import 'package:easyqrapp/generate.dart';
 import 'package:easyqrapp/homepage.dart';
 import 'package:easyqrapp/lecturer.dart';
 import 'package:easyqrapp/scan.dart';
-import 'package:easyqrapp/students.dart';
 import 'package:flutter/material.dart';
 import 'register.dart';
 
@@ -131,7 +130,6 @@ class DetailScreen extends StatelessWidget {
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold),
           ),
-
           SizedBox(height: 20.0),
           RaisedButton(
             child: Text(
@@ -173,25 +171,6 @@ class DetailScreen extends StatelessWidget {
                 side: BorderSide(color: Colors.green, width: 3.0)),
           ),
           SizedBox(height: 10.0),
-//          RaisedButton(
-          //          child: Text(
-          //          "STUDENT",
-          //        style: TextStyle(
-//                color: Colors.black,
-          //              letterSpacing: 1.5,
-          //            fontSize: 18.0,
-          //          fontWeight: FontWeight.bold,
-          //      ),
-//            ),
-          //          onPressed: () {
-          //          Navigator.of(context).push(
-          //          MaterialPageRoute(builder: (context) => Students()),
-          //      );
-          //  },
-          ///            shape: RoundedRectangleBorder(
-          //             borderRadius: BorderRadius.circular(20.0),
-          //           side: BorderSide(color: Colors.blue, width: 3.0)),
-          //   ),
         ],
       ),
     );
