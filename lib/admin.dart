@@ -1,4 +1,4 @@
-import'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class Admin extends StatefulWidget {
   @override
@@ -9,92 +9,92 @@ class _AdminState extends State<Admin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(
-        title:Text("ADMIN"),
-        centerTitle: true,
-      ),
-      body: Container(
-       padding:EdgeInsets.only(top:35.0, left:20.0, right: 20.0),
-        child: Column(
-          children: <Widget>[
-            TextField(
-              decoration: InputDecoration(
-                labelText: 'Email',
-                labelStyle: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontWeight: FontWeight.bold,
-                  color:Colors.blueAccent,
-                ),
-                focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blueAccent),
-                ),
-              ),
-            ),
-            TextField(
-              decoration: InputDecoration(
-                labelText: 'Password',
-                labelStyle: TextStyle(
-                  fontFamily: 'Montserrat',
-                  fontWeight: FontWeight.bold,
-                  color:Colors.blueAccent,
-                ),
-                focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blueAccent),
-                ),
-              ),
-              obscureText: true,
-            ),
-            SizedBox(height: 40.0),
-            Container(
-              height:40.0,
-              child: Material(
-                borderRadius: BorderRadius.circular(20.0),
-                shadowColor: Colors.blueAccent,
-                color: Colors.blueAccent,
-                elevation: 7.0,
-                child: GestureDetector(
-                  onTap:(){},
-                  child: Center(
-                    child:Text(
-                    'LOGIN',
-                    style:TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Montserrat',
-                      fontWeight: FontWeight.bold,
-                    ),
-                    ),
+        appBar: AppBar(
+          backgroundColor: Colors.green,
+          title: Text("ADMINISTRATEUR"),
+          centerTitle: true,
+        ),
+        body: Container(
+          padding: EdgeInsets.only(top: 35.0, left: 20.0, right: 20.0),
+          child: Column(
+            children: <Widget>[
+              TextField(
+                decoration: InputDecoration(
+                  labelText: 'Adresse courriel',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontWeight: FontWeight.bold,
+                    color: Colors.green,
+                  ),
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.green),
                   ),
                 ),
               ),
-            ),
-            SizedBox(height: 40.0),
-            Container(
-              height:40.0,
-              child: Material(
-                borderRadius: BorderRadius.circular(20.0),
-                shadowColor: Colors.blueAccent,
-                color: Colors.blueAccent,
-                elevation: 7.0,
-                child: GestureDetector(
-                  onTap:(){
-                    Navigator.of(context).pushNamed('/register');
-                  },
-                  child: Center(
-                    child:Text(
-                      'REGISTER',
-                      style:TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Montserrat',
-                        fontWeight: FontWeight.bold,
+              TextField(
+                decoration: InputDecoration(
+                  labelText: 'Mot de passe',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontWeight: FontWeight.bold,
+                    color: Colors.green,
+                  ),
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.green),
+                  ),
+                ),
+                obscureText: true,
+              ),
+              SizedBox(height: 40.0),
+              Container(
+                height: 40.0,
+                child: Material(
+                  borderRadius: BorderRadius.circular(20.0),
+                  shadowColor: Colors.green,
+                  color: Colors.green,
+                  elevation: 7.0,
+                  child: GestureDetector(
+                    onTap: () {},
+                    child: Center(
+                      child: Text(
+                        'Se connecter',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
                 ),
               ),
-            ),
-          ],
-        ),
-      )
-    );
+              SizedBox(height: 40.0),
+              Container(
+                height: 40.0,
+                child: Material(
+                  borderRadius: BorderRadius.circular(20.0),
+                  shadowColor: Colors.green,
+                  color: Colors.green,
+                  elevation: 7.0,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pushNamed('/register');
+                    },
+                    child: Center(
+                      child: Text(
+                        'Créer un compte',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ));
   }
 }

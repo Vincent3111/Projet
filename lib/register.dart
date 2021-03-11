@@ -10,7 +10,8 @@ class _RegisterState extends State<Register> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("REGISTER"),
+        backgroundColor: Colors.green,
+        title: Text("Créer un compte"),
         centerTitle: true,
       ),
       body: Container(
@@ -23,24 +24,24 @@ class _RegisterState extends State<Register> {
                 labelStyle: TextStyle(
                   fontFamily: 'Montserrat',
                   fontWeight: FontWeight.bold,
-                  color: Colors.blueAccent,
+                  color: Colors.green,
                 ),
                 focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blueAccent),
+                  borderSide: BorderSide(color: Colors.green),
                 ),
               ),
             ),
             SizedBox(height: 10.0),
             TextField(
               decoration: InputDecoration(
-                labelText: 'Email',
+                labelText: 'Adresse courriel',
                 labelStyle: TextStyle(
                   fontFamily: 'Montserrat',
                   fontWeight: FontWeight.bold,
-                  color: Colors.blueAccent,
+                  color: Colors.green,
                 ),
                 focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blueAccent),
+                  borderSide: BorderSide(color: Colors.green),
                 ),
               ),
               obscureText: true,
@@ -48,14 +49,14 @@ class _RegisterState extends State<Register> {
             SizedBox(height: 10.0),
             TextField(
               decoration: InputDecoration(
-                labelText: 'Password',
+                labelText: 'Mot de passe',
                 labelStyle: TextStyle(
                   fontFamily: 'Montserrat',
                   fontWeight: FontWeight.bold,
-                  color: Colors.blueAccent,
+                  color: Colors.green,
                 ),
                 focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blueAccent),
+                  borderSide: BorderSide(color: Colors.green),
                 ),
               ),
               obscureText: true,
@@ -65,8 +66,8 @@ class _RegisterState extends State<Register> {
               height: 40.0,
               child: Material(
                 borderRadius: BorderRadius.circular(20.0),
-                shadowColor: Colors.blueAccent,
-                color: Colors.blueAccent,
+                shadowColor: Colors.green,
+                color: Colors.green,
                 elevation: 7.0,
                 child: GestureDetector(
                   onTap: () {
@@ -74,7 +75,7 @@ class _RegisterState extends State<Register> {
                   },
                   child: Center(
                     child: Text(
-                      'REGISTER',
+                      'Créer',
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'Montserrat',

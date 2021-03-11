@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -12,7 +10,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Easy QR"),
+        title: Text("Gestion Biblio"),
         centerTitle: true,
       ),
       body: Container(
@@ -21,22 +19,21 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-
             Container(
-              height:40.0,
+              height: 40.0,
               child: Material(
                 borderRadius: BorderRadius.circular(20.0),
                 shadowColor: Colors.blueAccent,
                 color: Colors.blueAccent,
                 elevation: 7.0,
                 child: GestureDetector(
-                  onTap:(){
+                  onTap: () {
                     Navigator.of(context).pushNamed('/generate');
                   },
                   child: Center(
-                    child:Text(
+                    child: Text(
                       'GENERATE QR CODE',
-                      style:TextStyle(
+                      style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'Montserrat',
                         fontWeight: FontWeight.bold,
@@ -48,20 +45,20 @@ class _HomePageState extends State<HomePage> {
             ),
             SizedBox(height: 10.0),
             Container(
-              height:40.0,
+              height: 40.0,
               child: Material(
                 borderRadius: BorderRadius.circular(20.0),
                 shadowColor: Colors.blueAccent,
                 color: Colors.blueAccent,
                 elevation: 7.0,
                 child: GestureDetector(
-                  onTap:(){
+                  onTap: () {
                     Navigator.of(context).pushNamed('/scan');
                   },
                   child: Center(
-                    child:Text(
+                    child: Text(
                       'SCAN QR CODE',
-                      style:TextStyle(
+                      style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'Montserrat',
                         fontWeight: FontWeight.bold,
@@ -76,9 +73,4 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-
-
-
 }
-
-

@@ -114,9 +114,9 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.green,
         title: Text(
-          'Easy QR',
+          'Gestion Biblio',
           style: TextStyle(fontSize: 17.0),
         ),
       ),
@@ -125,16 +125,17 @@ class DetailScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Text(
-            'WELCOME',
+            'BONJOUR',
             style: TextStyle(
-                color: Colors.blueAccent,
-                fontSize: 20.0,
+                color: Colors.green,
+                fontSize: 30.0,
                 fontWeight: FontWeight.bold),
           ),
+
           SizedBox(height: 20.0),
           RaisedButton(
             child: Text(
-              "ADMIN",
+              "ADMINISTRATEUR",
               style: TextStyle(
                 color: Colors.black,
                 letterSpacing: 1.5,
@@ -149,12 +150,12 @@ class DetailScreen extends StatelessWidget {
             },
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
-                side: BorderSide(color: Colors.blue, width: 3.0)),
+                side: BorderSide(color: Colors.green, width: 3.0)),
           ),
           SizedBox(height: 10.0),
           RaisedButton(
             child: Text(
-              "LECTURER",
+              "UTILISATEUR",
               style: TextStyle(
                 color: Colors.black,
                 letterSpacing: 1.5,
@@ -169,28 +170,28 @@ class DetailScreen extends StatelessWidget {
             },
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
-                side: BorderSide(color: Colors.blue, width: 3.0)),
+                side: BorderSide(color: Colors.green, width: 3.0)),
           ),
           SizedBox(height: 10.0),
-          RaisedButton(
-            child: Text(
-              "STUDENT",
-              style: TextStyle(
-                color: Colors.black,
-                letterSpacing: 1.5,
-                fontSize: 18.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => Students()),
-              );
-            },
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
-                side: BorderSide(color: Colors.blue, width: 3.0)),
-          ),
+//          RaisedButton(
+          //          child: Text(
+          //          "STUDENT",
+          //        style: TextStyle(
+//                color: Colors.black,
+          //              letterSpacing: 1.5,
+          //            fontSize: 18.0,
+          //          fontWeight: FontWeight.bold,
+          //      ),
+//            ),
+          //          onPressed: () {
+          //          Navigator.of(context).push(
+          //          MaterialPageRoute(builder: (context) => Students()),
+          //      );
+          //  },
+          ///            shape: RoundedRectangleBorder(
+          //             borderRadius: BorderRadius.circular(20.0),
+          //           side: BorderSide(color: Colors.blue, width: 3.0)),
+          //   ),
         ],
       ),
     );
