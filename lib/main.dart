@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Easy QR',
+      title: 'Gestion Biblio',
       color: Colors.black,
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
@@ -25,8 +25,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-//blablabla_________________
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -53,7 +51,7 @@ class MyHomePage extends StatelessWidget {
                     Container(
                       width: 300.0,
                       child: Text(
-                        'Easy QR',
+                        'Gestion Biblio',
                         style: TextStyle(
                             color: Colors.green,
                             fontWeight: FontWeight.bold,
@@ -64,23 +62,23 @@ class MyHomePage extends StatelessWidget {
                       width: 356.0,
                       height: 250.0,
                       child: Image.network(
-                          "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX40478458.jpg"),
+                          "https://image.freepik.com/free-vector/isometric-book-icon-flat-style_100456-389.jpg"),
                     ),
                     Container(
-                      child: Text("Computing & Information Systems",
+                      child: Text("Gèrer sa propre bibliothèque",
                           style:
-                              TextStyle(fontSize: 20.0, color: Colors.green)),
+                              TextStyle(fontSize: 30.0, color: Colors.green)),
                     ),
                     SizedBox(height: 15.0),
                     Container(
-                      child: Text("SUSL",
+                      child: Text("et garder le sourire !",
                           style:
-                              TextStyle(fontSize: 20.0, color: Colors.green)),
+                              TextStyle(fontSize: 30.0, color: Colors.green)),
                     ),
                     SizedBox(height: 60.0),
                     Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
                         FloatingActionButton(
                           onPressed: () {
@@ -91,7 +89,7 @@ class MyHomePage extends StatelessWidget {
                             );
                           },
                           backgroundColor: Colors.green,
-                          child: Icon(Icons.arrow_right),
+                          child: Icon(Icons.add_to_home_screen),
                         ),
                       ],
                     ),
