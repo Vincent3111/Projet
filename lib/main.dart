@@ -1,4 +1,3 @@
-import 'package:easyqrapp/admin.dart';
 import 'package:easyqrapp/generate.dart';
 import 'package:easyqrapp/homepage.dart';
 import 'package:easyqrapp/lecturer.dart';
@@ -131,7 +130,7 @@ class DetailScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold),
           ),
           SizedBox(height: 20.0),
-          RaisedButton(
+          /* RaisedButton(
             child: Text(
               "ADMINISTRATEUR",
               style: TextStyle(
@@ -149,7 +148,7 @@ class DetailScreen extends StatelessWidget {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
                 side: BorderSide(color: Colors.green, width: 3.0)),
-          ),
+          ),*/
           SizedBox(height: 10.0),
           RaisedButton(
             child: Text(
