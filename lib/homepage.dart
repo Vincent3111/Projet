@@ -69,6 +69,31 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+            SizedBox(height: 10.0),
+            Container(
+              height: 40.0,
+              child: Material(
+                borderRadius: BorderRadius.circular(20.0),
+                shadowColor: Colors.green,
+                color: Colors.green,
+                elevation: 7.0,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pushNamed('/historique');
+                  },
+                  child: Center(
+                    child: Text(
+                      'HISTORIQUE',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Montserrat',
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
