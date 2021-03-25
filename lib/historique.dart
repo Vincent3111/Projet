@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:qrscan/qrscan.dart';
 
 class HistoriquePage extends StatefulWidget {
   @override
