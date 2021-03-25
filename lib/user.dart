@@ -54,7 +54,9 @@ class _AdminState extends State<Admin> {
                   color: Colors.green,
                   elevation: 7.0,
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).pushNamed('/homepage');
+                    },
                     child: Center(
                       child: Text(
                         'Se connecter',

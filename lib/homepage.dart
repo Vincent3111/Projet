@@ -12,6 +12,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("Gestion Biblio"),
         centerTitle: true,
+        backgroundColor: Colors.green,
       ),
       body: Container(
         padding: EdgeInsets.all(50.0),
